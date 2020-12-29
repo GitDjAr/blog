@@ -1,4 +1,3 @@
-const { resolve } = require('path')
 var path = require('path')
 var webpack = require('webpack')
 
@@ -59,10 +58,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        options: {
-          plugins: ['syntax-dynamic-import']
-        },
-        include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
+        exclude: /node_modules/
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
@@ -76,8 +72,8 @@ module.exports = {
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@':resolve('src'),
-      'v':resolve('src/views'),
+      '@':'src',
+      'v':'src/views',
     },
     extensions: ['*', '.js', '.vue', '.json']
   },
