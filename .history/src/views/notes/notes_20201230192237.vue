@@ -40,9 +40,7 @@
             </li>
             <li>
               Next
-              <a-button type='link' >
-                2<a-icon type="arrow-right" />
-              </a-button>
+              <a-button type='link' icon='arrow-right'>2</a-button>
             </li>
           </nav>
         </div>
@@ -109,11 +107,5 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  li{
-    list-style: none;
-    .ant-btn{
-      display: block;
-    }
-  }
 }
 </style>

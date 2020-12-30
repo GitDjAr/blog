@@ -1,4 +1,3 @@
-#脚本所在目录 /usr/local/webserver/nginx/shs
 #blog自动部署
 
 # 删除项目目录下得代码

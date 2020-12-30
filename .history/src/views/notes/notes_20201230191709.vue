@@ -30,20 +30,11 @@
       <a-col :span='24' :lg='{span:"13",offset:"1"}' :xl='{span:"15",offset:"1"}'>
         <div class="notes-box">
           content
-          <a-button type='link' icon='question'>
+          <a-buttom type='text' icon='question'>
             有什么疑问?
-          </a-button>
-          <nav class="footer-nav">
-            <li>
-              Previous
-              <a-button type='link' icon='arrow-left'>1</a-button>
-            </li>
-            <li>
-              Next
-              <a-button type='link' >
-                2<a-icon type="arrow-right" />
-              </a-button>
-            </li>
+          </a-buttom>
+          <nav class="">
+            
           </nav>
         </div>
       </a-col>
@@ -102,18 +93,7 @@ export default {
 .notes-box{
   box-sizing: border-box;
   padding: 30px 0;
-  background: orchid;
+  background: #4186f4;
   height: 2000px;
-}
-.footer-nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  li{
-    list-style: none;
-    .ant-btn{
-      display: block;
-    }
-  }
 }
 </style>

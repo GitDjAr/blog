@@ -2,9 +2,8 @@
 <template>
   <div>
     <a-row>
-      <a-col :span='0' :lg="{span:'5'}" :xl="{span:'4'}"
-      class="col-lefe">
-        <a-affix :offset-top='100'>
+      <a-col :span='0' :lg="{span:'5'}" :xl="{span:'4'}">
+        <div>
           <a-collapse default-active-key="1" :bordered="false"
           expand-icon-position='right'>
             <template #expandIcon="props">
@@ -25,31 +24,16 @@
               <p>{{ text }}</p>
             </a-collapse-panel>
           </a-collapse>
-        </a-affix>
+        </div>
       </a-col>
       <a-col :span='24' :lg='{span:"13",offset:"1"}' :xl='{span:"15",offset:"1"}'>
         <div class="notes-box">
           content
-          <a-button type='link' icon='question'>
-            有什么疑问?
-          </a-button>
-          <nav class="footer-nav">
-            <li>
-              Previous
-              <a-button type='link' icon='arrow-left'>1</a-button>
-            </li>
-            <li>
-              Next
-              <a-button type='link' >
-                2<a-icon type="arrow-right" />
-              </a-button>
-            </li>
-          </nav>
         </div>
       </a-col>
       <a-col :span='0' :lg="{span:'4',offset:'1'}" :xl='{span:"3",offset:"1"}'
       class="guding">
-        <a-affix :offset-top='120'>
+        <a-affix :offset-top='200'>
           <div class="menu-notes">
             <a-anchor :target-offset="targetOffset">
               <a-anchor-link href="#components-anchor-demo-basic" title="Basic demo" />
@@ -100,20 +84,7 @@ export default {
   color: rgb(15, 117, 253);
 }
 .notes-box{
-  box-sizing: border-box;
-  padding: 30px 0;
-  background: orchid;
+  background: #4186f4;
   height: 2000px;
-}
-.footer-nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  li{
-    list-style: none;
-    .ant-btn{
-      display: block;
-    }
-  }
 }
 </style>

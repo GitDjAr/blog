@@ -1,0 +1,7 @@
+[
+  {
+    "id": "blog-webhook",
+    "execute-command": "build.sh",
+    "command-working-directory": "/usr/local/webserver/nginx/shs"
+  }
+]

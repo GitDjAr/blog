@@ -33,16 +33,14 @@
           <a-button type='link' icon='question'>
             有什么疑问?
           </a-button>
-          <nav class="footer-nav">
+          <nav class="">
             <li>
               Previous
               <a-button type='link' icon='arrow-left'>1</a-button>
             </li>
             <li>
               Next
-              <a-button type='link' >
-                2<a-icon type="arrow-right" />
-              </a-button>
+              <a-button type='link' icon='arrow-right'>2</a-button>
             </li>
           </nav>
         </div>
@@ -104,16 +102,5 @@ export default {
   padding: 30px 0;
   background: orchid;
   height: 2000px;
-}
-.footer-nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  li{
-    list-style: none;
-    .ant-btn{
-      display: block;
-    }
-  }
 }
 </style>

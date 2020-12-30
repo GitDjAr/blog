@@ -1,4 +1,3 @@
-#脚本所在目录 /usr/local/webserver/nginx/shs
 #blog自动部署
 
 # 删除项目目录下得代码
@@ -12,8 +11,12 @@ if [ ! -d "go-home" ]; then
   git clone https://github.com/GitDjAr/blog.git
 fi
 
-cd ../codes/blog
+cd blog
 
+# clone 新的代码
+git clone https://github.com/GitDjAr/blog.git
+# 进入目录  blog 目录名称
+cd ../codes/blog
 # 安装依赖 --ignore-scripts表示npm将不会运行在package.json中指定的scripts脚本
 #npm install --ignore-scripts 
 npm install
