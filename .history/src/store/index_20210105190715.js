@@ -6,11 +6,13 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state:{
-    Switch_:localStorage.getItem('state')==='true'//dattiem or nightime
+    Switch_:localStorage.getItem('state')  //dattiem or nightime
   },
-  mutations:{
+  modules:{
     Switch_(state,status){
-      localStorage.setItem('state',status)
+      state.Switch_ = status
+      localStorage.setItem('area', status)
+      localStorage.setItem('白天or夜晚',status)
     }
   },
 getters

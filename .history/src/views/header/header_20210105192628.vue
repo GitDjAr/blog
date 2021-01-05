@@ -8,7 +8,7 @@
     class="ul_flat"
     >
     <a-switch checked-children="开" un-checked-children="关"
-    :defaultChecked='status'
+    :defaultChecked='localStorage.getItem("state")'
     @change="onchange"/>
       <a-menu v-model="current" mode="horizontal"
       @click='titleClick '>
@@ -66,7 +66,7 @@ export default {
   data () {
     return {
       // 状态
-      status:this.$store.state.Switch_,
+      status:'',
       userimg:userimg,
       name:'ahh',
       isicon:'',
@@ -90,8 +90,10 @@ export default {
         path:e.key
       })
     },
-    onchange(check){
-      this.$store.commit('Switch_',check)
+    onchange(){
+      // this.$store.commit('Switch_',!this.status)
+      // this.status = !this.status
+      localStorage.setItem()
     }
 },  
 

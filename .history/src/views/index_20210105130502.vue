@@ -19,7 +19,7 @@
         :size='size'
         class="bounce-left">关注不迷路</a-button>
       </div>
-      <div></div>
+      <div>asdf</div>
     </div>
     <div class="time-box">
       <a-timeline>
@@ -208,13 +208,11 @@ div{
 @media screen and (max-width:992px){
   .hello{
     padding: 20px;
-    grid-auto-flow:column;
-    align-items: flex-start;
-    grid-template-columns: 1fr 0fr;
-    justify-items: start;
-    &:nth-of-type(1){
-      background: url(../assets/svg/2021.svg)#fff 100%/80vw no-repeat ;
-      background-position:  bottom;
+    grid-auto-flow:row;
+    grid-template-columns: 1fr;
+    &{
+      background: url(../assets/svg/2021.svg)#fff 100%/45vw no-repeat ;
+      background-position:  left;
     }
   }
 }

@@ -89,7 +89,7 @@ div{
       font-size: 18px;
     }
     .color-i{
-      font-size: 36px;
+      font-size: 16px;
       color: #4186f4;
       cursor: pointer;
     }
@@ -205,17 +205,4 @@ div{
   }
 }
 
-@media screen and (max-width:992px){
-  .hello{
-    padding: 20px;
-    grid-auto-flow:column;
-    align-items: flex-start;
-    grid-template-columns: 1fr 0fr;
-    justify-items: start;
-    &:nth-of-type(1){
-      background: url(../assets/svg/2021.svg)#fff 100%/80vw no-repeat ;
-      background-position:  bottom;
-    }
-  }
-}
 </style>

@@ -92,6 +92,8 @@ export default {
     },
     onchange(check){
       this.$store.commit('Switch_',check)
+      // this.status = !this.status
+      // localStorage.setItem()
     }
 },  
 

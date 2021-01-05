@@ -213,7 +213,7 @@ div{
     grid-template-columns: 1fr 0fr;
     justify-items: start;
     &:nth-of-type(1){
-      background: url(../assets/svg/2021.svg)#fff 100%/80vw no-repeat ;
+      background: url(../assets/svg/2021.svg)#fff 100%/100vh no-repeat ;
       background-position:  bottom;
     }
   }

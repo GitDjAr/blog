@@ -16,7 +16,7 @@ import Antd from 'ant-design-vue';
 
 
 // 主题
-import '@/style-ant/zhuti.scss';
+import 'style-ant/zhuti';
 
 
 Vue.use(Antd);

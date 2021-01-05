@@ -7,9 +7,9 @@
     span='2'
     class="ul_flat"
     >
-    <a-switch checked-children="开" un-checked-children="关"
-    :defaultChecked='status'
-    @change="onchange"/>
+    <a-switch checked-children="开" un-checked-children="关" default-checked 
+    :checked='status'
+    @change="onChange"/>
       <a-menu v-model="current" mode="horizontal"
       @click='titleClick '>
         <a-menu-item key="index"> <a-icon type="mail" />博客</a-menu-item>
@@ -90,7 +90,7 @@ export default {
         path:e.key
       })
     },
-    onchange(check){
+    onChange(check){
       this.$store.commit('Switch_',check)
     }
 },  

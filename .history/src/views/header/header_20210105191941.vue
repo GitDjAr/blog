@@ -8,8 +8,7 @@
     class="ul_flat"
     >
     <a-switch checked-children="开" un-checked-children="关"
-    :defaultChecked='status'
-    @change="onchange"/>
+    :defaultChecked='this.$store.state.Switch_'/>
       <a-menu v-model="current" mode="horizontal"
       @click='titleClick '>
         <a-menu-item key="index"> <a-icon type="mail" />博客</a-menu-item>
@@ -66,7 +65,7 @@ export default {
   data () {
     return {
       // 状态
-      status:this.$store.state.Switch_,
+      status:'',
       userimg:userimg,
       name:'ahh',
       isicon:'',
@@ -90,8 +89,9 @@ export default {
         path:e.key
       })
     },
-    onchange(check){
-      this.$store.commit('Switch_',check)
+    xx(){
+      // this.$store.commit('Switch_',!this.status)
+      this.status = !this.status
     }
 },  
 

@@ -90,8 +90,10 @@ export default {
         path:e.key
       })
     },
-    onchange(check){
-      this.$store.commit('Switch_',check)
+    onchange(){
+      this.$store.commit('Switch_',!this.status)
+      // this.status = !this.status
+      // localStorage.setItem()
     }
 },  
 

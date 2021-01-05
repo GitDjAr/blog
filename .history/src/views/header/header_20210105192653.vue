@@ -66,7 +66,7 @@ export default {
   data () {
     return {
       // 状态
-      status:this.$store.state.Switch_,
+      status:localStorage.getItem("state"),
       userimg:userimg,
       name:'ahh',
       isicon:'',
@@ -90,8 +90,10 @@ export default {
         path:e.key
       })
     },
-    onchange(check){
-      this.$store.commit('Switch_',check)
+    onchange(){
+      // this.$store.commit('Switch_',!this.status)
+      // this.status = !this.status
+      localStorage.setItem()
     }
 },  
 

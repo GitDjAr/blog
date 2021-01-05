@@ -1,6 +1,6 @@
 const getters={
   switch:()=>{
-    localStorage.getItem('state')
+    // localStorage.
   }
 };
 export default getters
