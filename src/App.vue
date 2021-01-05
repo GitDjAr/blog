@@ -43,6 +43,15 @@ export default {
     margin: auto;
     padding-top: 62px;
   }
+  // icon 图标 加入通用css代码（引入一次就行）
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+
   .myenter-class{
 	-webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;

@@ -49,9 +49,10 @@
       </a-col>
       <a-col :span='0' :lg="{span:'4',offset:'1'}" :xl='{span:"3",offset:"1"}'
       class="guding">
-        <a-affix :offset-top='120'>
-          <div class="menu-notes">
-            <a-anchor :target-offset="targetOffset">
+        <!-- <a-affix :offset-top='120'> -->
+          <!-- <div class="menu-notes"> -->
+            <a-anchor :offsetTop="65"
+            :offsetBottom='100'>
               <a-anchor-link href="#components-anchor-demo-basic" title="Basic demo" />
               <a-anchor-link href="#components-anchor-demo-static" title="Static demo" />
               <a-anchor-link href="#API" title="API">
@@ -59,8 +60,8 @@
                 <a-anchor-link href="#Link-Props" title="Link Props" />
               </a-anchor-link>
             </a-anchor>
-          </div>
-        </a-affix>
+          <!-- </div> -->
+        <!-- </a-affix> -->
       </a-col>
     </a-row>
   </div>
@@ -68,6 +69,9 @@
 
 <script>
 export default {
+  components(){
+    
+  },
   data () {
     return {
       isshow:'0',

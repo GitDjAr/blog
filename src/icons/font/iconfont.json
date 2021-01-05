@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "499377",
+      "name": "QQ",
+      "font_class": "qq",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "7239764",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e732",
+      "unicode_decimal": 59186
+    },
+    {
+      "icon_id": "13553421",
+      "name": "bilibili-fill",
+      "font_class": "bilibili-fill",
+      "unicode": "eea8",
+      "unicode_decimal": 61096
+    }
+  ]
+}
