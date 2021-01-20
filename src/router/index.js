@@ -8,11 +8,11 @@ const router = new Router({
   routes:[
     {
       path:'/',
-      redirect:'/index',
+      redirect:'/setting:2',
     },
     {
       path:'/index',
-      meat:{title:'hello,欢迎来到我博客',foter:false},
+      // meat:{title:'hello,欢迎来到我博客',foter:false},
       name:'index',
       component:()=>import('@/views/index')
     },
@@ -27,6 +27,18 @@ const router = new Router({
       meat:{title:'笔记',foter:true},
       name:'notes',
       component:()=>import('@/views/notes/notes')
+    },
+    {
+      path:'/video',
+      meat:{title:'video',foter:true},
+      name:'video',
+      component:()=>import('@/views/videodev/index')
+    },
+    {
+      path:'/test',
+      meat:{title:'test',foter:true},
+      name:'test',
+      component:()=>import('@/views/videodev/test')
     }
   ]
 })

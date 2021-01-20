@@ -12,6 +12,12 @@ import './icons'
 // import 'mavon-editor/dist/css/index.css'
 // Vue.use(mavonEditor)
 
+//  视频工具
+// import Player from 'xgplayer';
+// import './xgplayer/skin/index.js';
+
+
+
 import Antd from 'ant-design-vue';
 
 

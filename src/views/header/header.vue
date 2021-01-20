@@ -7,13 +7,13 @@
     span='2'
     class="ul_flat"
     >
-    <a-switch checked-children="开" un-checked-children="关"
+    <!-- <a-switch checked-children="开" un-checked-children="关"
     :defaultChecked='status'
-    @change="onchange"/>
+    @change="onchange"/> -->
       <a-menu v-model="current" mode="horizontal"
       @click='titleClick '>
-        <a-menu-item key="index"> <a-icon type="mail" />博客</a-menu-item>
-        <a-menu-item key="about"> <a-icon type="mail" />关于我</a-menu-item>
+        <!-- <a-menu-item key="index"> <a-icon type="mail" />博客</a-menu-item>
+        <a-menu-item key="about"> <a-icon type="mail" />关于我</a-menu-item> -->
         <a-sub-menu>
           <span slot="title" class="submenu-title-wrapper"
             ><a-icon type="setting" />教程</span
@@ -22,8 +22,8 @@
             <a-menu-item key="notes">
               笔记
             </a-menu-item>
-            <a-menu-item key="setting:2">
-              Option 2
+            <a-menu-item key="video">
+              video开发
             </a-menu-item>
           </a-menu-item-group>
           <a-menu-item-group title="Item 2">
@@ -108,6 +108,7 @@ export default {
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   height: 60px;
   width: 100%;
+  background: #fff;
   .ant-menu-root {
     border:none
   }
